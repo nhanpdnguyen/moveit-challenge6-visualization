@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 export function doCheckMoves(moveCode: string) {
   const moves = moveCode.split(/\s+/);
 
