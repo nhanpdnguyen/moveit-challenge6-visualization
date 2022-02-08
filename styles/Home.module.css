@@ -2,30 +2,56 @@
   display: flex;
   align-items: stretch;
   margin-top: 3rem;
+  border: 1px solid black;
 }
 
 .cell {
   border: 1px solid black;
-  padding: 10px;
   width: 200px;
   height: 200px;
   display: flex;
   align-items: center;
   justify-content: stretch;
-  column-gap: 3rem;
+}
+
+.cellContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.cellScore {
+  color: #4291eb;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .cellHead {
-  width: 30px;
+  flex-basis: 30px;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.cellHeadDisabled {
+  opacity: 0.5;
 }
 
 .cellHead:hover {
-  background-color: lightblue;
+  background-color: rgba(173, 216, 230, 0.603);
   cursor: pointer;
 }
 
 .row {
   display: flex;
+}
+
+.buttonsRow {
+  margin-top: 1rem;
 }
 
 .king {
@@ -34,6 +60,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid black;
+  border-collapse: collapse;
 }
 
 .container {
